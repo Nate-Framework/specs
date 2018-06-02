@@ -7,12 +7,32 @@ Nate is a native app framework for iOS and Android that provides styling designe
 # File System (todo)
 
 ```
-/node-modules
+/node_modules
 /build
+    /ios
+    /android
+    /compiled
+        /assets
+            /images
+            /icons
+            /splashscreens
+            /js
+            /scss
+        index.js
+        index.html
+        index.css
+        /pages
 /src
     /components
     /pages
+    /assets
+        /images
+        /icons
+        /splashscreens
+        /js
+        /scss
     index.html
+    index.scss
     index.js
 package.json
 ```
@@ -107,3 +127,66 @@ Opens device emulator.
 ```
 
 Runs on connected device.
+
+# Components (images coming soon)
+
+```
+<badge>1</badge>
+```
+
+Badge
+
+```
+<button nate-button>Click Me</button>
+```
+
+Button
+
+```
+<card>
+    <h1>This is a card</h1>
+    <p>This is the content</p>
+</card>
+```
+
+Card
+
+```
+<item>
+    <checkbox label="thing"></checkbox>
+</item>
+```
+
+Checkbox
+
+```
+<item>
+    <datetime label="time"></datetime>
+</item>
+```
+
+Date and time picker
+
+```
+<grid>
+    <row>
+        <col col-12>12</col>
+    </row>
+</grid>
+```
+
+Grid
+
+```
+<icon name="key"></icon>
+```
+
+Icons
+
+```
+<input nate-text label="textbox"></input>
+```
+
+Textbox
+
+(todo lists...)
